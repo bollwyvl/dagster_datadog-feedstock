@@ -1,13 +1,13 @@
 {% set name = "dagster_datadog" %}
-{% set version = "0.6.5" %}
+{% set version = "0.6.7.post0" %}
 
 package:
   name: "{{ name|lower }}"
   version: "{{ version }}"
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 638322b711e6f88a0bde16dde39d0c358b5211796e9c2481068c6a0d74977ecf
+  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name|replace('_', '-') }}/{{ name|replace('_', '-') }}-{{ version }}.tar.gz"
+  sha256: 191ccc30b817ee460eb092911a24a0edb104567764ab50d5aa63edeacf904624
 
 build:
   number: 0
